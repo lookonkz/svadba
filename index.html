@@ -1,0 +1,772 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html lang="en"> <!--<![endif]-->
+<head>
+    <!-- Basic Page Needs
+    ================================================== -->
+    <title>Центр свадебной индустрии</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="http://webtechtoday.com/">
+    <meta name="author" content="nurealam sabbir">
+
+    <!-- Mobile Specific Metas 
+  ================================================== -->
+    <meta content="width=device-width,initial-scale=1" name="viewport">
+
+    <!-- Favicons
+    ================================================== -->
+    <link rel="shortcut icon" href="{% static images/favicon.png %}">
+    <link rel="apple-touch-icon" href="{% static images/apple-touch-icon.png %}">
+    <link rel="apple-touch-icon" sizes="72x72" href="{% static images/apple-touch-icon-72x72.png %}">
+    <link rel="apple-touch-icon" sizes="114x114" href="{% static images/apple-touch-icon-114x114.png %}">
+
+    <!--fonts
+    ====================================================-->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700%7cOswald:400,700" rel="stylesheet">
+    <!--stylesheets
+    ====================================================-->
+{#    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"/>#}
+    <link rel="stylesheet" type="text/css" href="{% static css/font-awesome.min.css %}"/>
+    <link rel="stylesheet" type="text/css" href="{% static css/style.css %}"/>
+    <link rel="stylesheet" type="text/css" href="{% static css/simpletextrotator.css %}">
+    
+    <!--[if lt IE 9]>
+        <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]--> 
+    <script src="{% static js/jquery.min.js"></script> <!-- JQUERY -->
+</head>
+<body>
+<div class="bg_heart">
+</div>
+    <!--FRONT PAGE/ SPLASH SCREEN SECTION-->
+
+    <div class="loading-screen"></div>
+
+    <div id="frontpage"> 
+        <div class="shadow-img"></div> 
+       <!--  <video src="svadva.webm" width="520" height="390" autoplay class="front-img img-responsive" alt ="Front-image" controls = "controls"></video> -->
+        <img src="images/front-image.png" class="front-img img-responsive" alt ="Front-image">
+        <!--IMAGE FOR FRONT SCREEN-->
+        <h1>svadba <span class="invert">kz</span></h1><!--PROFILE NAME-->
+        <h3 class="invert" style="margin-top: -10px; margin-bottom: 10px; font-family: 'Sanasoft Roni B.kz';">Центр <span class="rotate">свадебной, индустрии</span></h3> <!--SUBTITLE IN PROFILE-->
+        <div class="frontclick"><img src="images/click.png" alt="" class="img-responsive"><span class="pulse"></span></div>
+    </div>
+    <!--FRONT PAGE/ SPLASH SCREEN SECTION ENDS-->
+    <!--container-->
+    <div class="container">
+        <div id="content" class="row hidden">
+            <div class="col-sm-4">
+                <!--namecard-->
+                <div id="namecard" class="namecard">
+                    <div class="shadow-img"></div>
+                    <h1 class="maintitle">svadba <span class="invert">kz</span></h1><!--PROFILE NAME-->
+                    <h3 class="invert sub-maintitle">Центр  
+                        <span class="rotate">свадебной, индустрии</span><!--SUBTITLE AFTET NAME-->
+                    </h3>
+                    <img id="profile-img" class="profile-img transparent" src="images/profile-thum.png" alt="profile-image"/><!--PROFILE IMAGE-->
+                </div><!--/#namecard-->
+                <!--menu-->
+                <div id="menu-container">
+                    <!--PAGE MENU-->
+                    <ul class="nav-menu no-padding">
+                        <li class="nav-btn selected" title="Home" data-page="home">
+                            <div class="hover-background"></div>
+                            <span>О нас</span><i class="fa fa-user fa-fw"></i>
+                        </li>
+                        <li class="nav-btn folio-btn" data-filter="*"id="resume-btn"  title="Resume"  data-page="resume">
+                            <div class="hover-background"></div>
+                            <span>Выбрать город</span><i class="fa fa-file-text fa-fw"></i>
+                        </li>
+                       <li class="nav-btn folio-btn" data-filter="*" title="Portfolio" data-page="portfolio">
+                            <div class="hover-background"></div>
+                            <span>Блог</span><i class="fa fa-suitcase fa-fw"></i>
+                        </li>
+                        <li class="nav-btn" title="Contact" id="contact-link" data-page="contact">
+                            <div class="hover-background"></div>
+                            <span>Контакты</span><i class="fa fa-paper-plane fa-fw"></i>
+                        </li>
+                    </ul><!--/.nav-menu __PAGE MENU ENDS-->
+
+                    <!--SOCIAL NAV MENU-->
+                    <div class="social-menu-container">
+                        <ul class="social-menu no-padding">                     
+                        <li><a href="https://www.facebook.com/"><i class="fa fa-facebook"></i></a></li>
+                        <li><a href="https://www.instagram.com/_svadba.kz_/"><i class="fa fa-instagram"></i></a></li>
+                        <li><a href="https://www.youtube.com/"><i class="fa fa-youtube"></i></a></li>
+                        <li><a href="https://www.linkedin.com/"><i class="fa fa-linkedin"></i></a></li>
+                        </ul>
+                    </div><!--/.social-menu-container-->
+                </div><!--#menu-container-->
+            </div>
+            <div class="col-sm-8 page-segment">
+                <ul class="page-container no-padding">
+                    <!--HOME/PROFILE PAGE-->
+                    <li id="home" class="selected">
+                        <div class="title-container hidden">
+                            <div class="shadow-img"></div> 
+                            <h2 class="rotate-out"><span class="rotate">Республиканский, Республикалық</span> <span class="rotate" style="color:white;">Центр Свадебной Индустрии, Үйлену Тойы Орталығы</span></h2> 
+                            <!--HOME TITLE-->                          
+                        </div>
+                        <div class="description hidden">
+                            <div class="watermark-home"></div> 
+
+                            <div class="fade-text transparent">
+                                <!--DESCRIPTION ON HOME-->
+                                <div class="strong-text"><span>О нас</span></div>
+                                <!--<div class="focus-text"><span> & </span><span></span></div>-->
+                                <p class="large-paragraph">Сделать ваше торжество идеальным, выбрать из огромного ассортимента предалгаемой продукции и услуг – лучшее, доверить проведение вашего “самого романтического дня” профессионалам, вам поможет портал SVADBA.KZ</p>         
+                                <!--DESCRIPTION ON HOME ENDS-->
+                            </div>
+
+                            <!--ALL PERSONAL DETAILS-->
+                            <h3 class="personal-info-title title">Контактные данные</h3>
+                            <ul class="personal-info">
+                      <!--           <li class="rotate-out rotated"><label>Имя</label><span>Anderson smith</span></li>     -->                 
+                                <li class="rotate-out rotated"><label>Адрес</label><span>Б. Момышулы 2/4 блок 3, 4 этаж</span></li>
+                                <li class="rotate-out rotated"><label>Email</label><span>info@svadba.kz</span></li>  
+                                <li class="rotate-out rotated"><label>Телефон</label><a href="tel:+77770003340"><span>+77770003340</span></a></li>
+                            </ul><!--/ul.personal-info-->
+                        </div>
+                    </li><!--/#home-->
+
+                    <!--RESUME PAGE-->
+                   <li id="resume" class="hidden">
+                        <div class="title-container">
+                            <div class="shadow-img"></div>
+                            <h2 class="rotate-out rotated"><span class="invert">Выберите </span>город</h2> <!--RESUME TITLE-->
+                        </div>
+
+                        <!--PORTFOLIO CATEGORY LIST-->    
+<!--                         <div class="abs-child">
+                            <ul class="button-group filters-button-group">
+                                <li class="button is-checked" data-filter="*">Show All</li>
+                                <li class="button" data-filter=".photography">Photography</li>
+                                <li class="button" data-filter=".commercial">Commercial</li>
+                                <li class="button" data-filter=".potrait">Potrait</li>
+                            </ul><!--/.button-group filters-button-group-->
+                  <!--       </div> --> 
+                        
+                        <div class ="sec-porfolio description"> 
+                            <div class="row">
+                                <!--PORTFOLIO ITEM CONTAINER-->
+                                <div class="folio-container">
+                                    <ul class="folio-item"><!--PORTFOLIO INDIVIDAUAL ITEM-->
+                                        <li class="view view-first photography">  
+                                            <img src="images/folio/1.png" alt="logs" /><!--PORTFOLIO INDIVIDAUAL ITEM IMAGE--> 
+                                            <div class="mask">  
+                                                 <h2>Астана</h2>
+                                                <a  href="http://astana-svadba.kz/" role="button" class="info" data-toggle="modal" >Выбрать</a>
+                                             </div>  
+                                        </li>  
+                                        <li class="view view-first photography">
+                                          <img src="images/folio/3.png" alt="book" />
+                                            <div class="mask"></div>
+                                            <div class="content">
+                                                <h2>Шымкент</h2>  
+                                                <a  href="http://shymkent-svadba.kz/" role="button" class="info" data-toggle="modal" >Выбрать</a>
+                                            </div>
+                                        </li>
+                                        <li class="view view-first photography">  
+                                             <img src="images/folio/5.png" alt="beach" />  
+                                             <div class="mask">  
+                                                 <h2>Алматы</h2>
+                                                 <a  href="http://almaty-svadba.kz/" role="button" class="info" data-toggle="modal" >Выбрать</a>
+                                             </div>  
+                                        </li>                         
+                                        <li class="view view-first photography">
+                                          <img src="images/folio/2.png" alt="guy" /> 
+                                            <div class="mask"></div>
+                                            <div class="content">
+                                                <h2>Караганда</h2>
+                                                <a  href="http://karaganda-svadba.kz/" role="button" class="info" data-toggle="modal" >Выбрать</a>
+                                            </div>
+                                        </li> 
+                                                            
+                                        <li class="view view-first photography">  
+                                             <img src="images/folio/6.png" alt="illustration" />   
+                                             <div class="mask">  
+                                                 <h2>Атырау</h2>       
+                                                 <a  href="http://atyrau-svadba.kz/" role="button" class="info" data-toggle="modal" >Выбрать</a>
+                                             </div>  
+                                        </li>                         
+                                        <li class="view view-first photography">
+                                          <img src="images/folio/7.png" alt="guy" />
+                                            <div class="mask"></div>
+                                            <div class="content">
+                                                <h2>Актобе</h2>    
+                                                <a  href="http://aktobe-svadba.kz/" role="button" class="info" data-toggle="modal" >Выбрать</a>
+                                            </div>
+                                        </li> 
+<!--                                         <li class="view view-tenth photography">
+                                            <img src="images/folio/logs.jpg" alt="logs" />
+                                            <div class="mask">  
+                                                 <h2>woodsman</h2>   
+                                                 <a role="button" class="info" data-toggle="modal" data-target="#myModal">Выбрать</a>
+                                             </div>  
+                                        </li>   
+                                        
+                                        <li class="view view-tenth photography"> 
+                                            <img src="images/folio/beach.jpg" alt="beach" /> 
+                                            <div class="mask">  
+                                                <h2>New York</h2>
+                                                <a role="button" class="info" data-toggle="modal" data-target="#myModal5">Выбрать</a> 
+                                            </div>  
+                                        </li>            -->  
+                                                                                                
+                                                  
+                                    </ul>
+                                </div>
+                                <!--PORTFOLIO ITEM CONTAINER ENDS-->
+                            </div>                          
+                        </div>
+                    </li>
+                    <!--/#resume-->
+                    <!--PORTFOLIO PAGE-->
+                    <li id="portfolio" class="hidden">
+                        <div class="title-container">
+                            <div class="shadow-img"></div>
+                            <h2 class="rotate-out rotated">Блог</h2> <!--PORTFOLIO TITLE-->                         
+                        </div>
+
+                        <!--PORTFOLIO CATEGORY LIST-->    
+                        <div class="abs-child">
+                            <ul class="button-group filters-button-group">
+                                <li class="button is-checked" data-filter="*">Все</li>
+                                <li class="button" data-filter=".photography">Новое</li>
+                                <li class="button" data-filter=".commercial">Интересное</li>
+                        </div> 
+                        
+                        <div class ="sec-porfolio description"> 
+                            <div class="row">
+                                <div class="folio-container">
+                                    <ul class="folio-item">
+                                        <li class="view view-first photography">  
+                                            <img src="images/27.jpg" alt="logs" />
+                                            <div class="mask">  
+                                                 <h2>Ах, эти цифры…</h2> 
+                                                 <a role="button" class="info" data-toggle="modal" data-target="#myModal">Выбрать</a>
+                                             </div>  
+                                        </li>  
+                                        <li class="view view-first photography">
+                                          <img src="images/42.jpg" alt="book" />
+                                            <div class="mask"></div>
+                                            <div class="content">
+                                                <h2>Счастливы вместе</h2>           
+                                                <a role="button" class="info" data-toggle="modal" data-target="#myModal2">Выбрать</a>
+                                            </div>
+                                        </li>
+<!--                                         <li class="view view-tenth photography"> 
+                                             <img src="images/folio/beach.jpg" alt="beach" /> 
+                                             <div class="mask">  
+                                                 <h2>New York</h2>                                    
+                                                 <a role="button" class="info" data-toggle="modal" data-target="#myModal5">Выбрать</a> 
+                                             </div>  
+                                        </li>                         
+                                        <li class="view view-second commercial">
+                                          <img src="images/folio/guy.jpg" alt="guy" />
+                                            <div class="mask"></div>
+                                            <div class="content">
+                                                <h2>Image Name</h2>
+                                                <a role="button" class="info" data-toggle="modal" data-target="#myModal3">Выбрать</a>
+                                            </div>
+                                        </li> 
+                                                            
+                                        <li class="view view-first potrait">
+                                             <img src="images/folio/illustration.jpg" alt="illustration" />
+                                             <div class="mask">  
+                                                 <h2>New York</h2>                                   
+                                                 <a role="button" class="info" data-toggle="modal" data-target="#myModal4">Выбрать</a> 
+                                             </div>  
+                                        </li>                         
+                                        <li class="view view-second photography">
+                                          <img src="images/folio/guy.jpg" alt="guy" /><
+                                            <div class="mask"></div>
+                                            <div class="content">
+                                                <h2>Image Name</h2>                                 
+                                                <a role="button" class="info" data-toggle="modal" data-target="#myModal3">Выбрать</a>
+                                            </div>
+                                        </li> 
+                                        <li class="view view-tenth potrait"> 
+                                            <img src="images/folio/logs.jpg" alt="logs" /> 
+                                            <div class="mask">  
+                                                 <h2>woodsman</h2>
+                                                 <a role="button" class="info" data-toggle="modal" data-target="#myModal">Выбрать</a> 
+                                             </div>  
+                                        </li>   
+                                        
+                                        <li class="view view-tenth commercial">
+                                             <img src="images/folio/beach.jpg" alt="beach" /> 
+                                             <div class="mask">  
+                                                 <h2>New York</h2>
+                                                 <a role="button" class="info" data-toggle="modal" data-target="#myModal5">Выбрать</a> 
+                                             </div>  
+                                        </li>             
+                                        <li class="view view-first photography">  
+                                            <img src="images/folio/logs.jpg" alt="logs" />
+                                            <div class="mask">  
+                                                 <h2>woodsman</h2> 
+                                                 <a role="button" class="info" data-toggle="modal" data-target="#myModal">Выбрать</a>
+                                             </div>  
+                                        </li>  
+                                        <li class="view view-second commercial">
+                                          <img src="images/folio/book.jpg" alt="book" />
+                                            <div class="mask"></div>
+                                            <div class="content">
+                                                <h2>Hover Style #2</h2>           
+                                                <a role="button" class="info" data-toggle="modal" data-target="#myModal2">Выбрать</a>
+                                            </div>
+                                        </li>
+                                        <li class="view view-tenth photography"> 
+                                             <img src="images/folio/beach.jpg" alt="beach" /> 
+                                             <div class="mask">  
+                                                 <h2>New York</h2>                                    
+                                                 <a role="button" class="info" data-toggle="modal" data-target="#myModal5">Выбрать</a> 
+                                             </div>  
+                                        </li>                         
+                                        <li class="view view-second commercial">
+                                          <img src="images/folio/guy.jpg" alt="guy" />
+                                            <div class="mask"></div>
+                                            <div class="content">
+                                                <h2>Image Name</h2>
+                                                <a role="button" class="info" data-toggle="modal" data-target="#myModal3">Выбрать</a>
+                                            </div>
+                                        </li> 
+                                                            
+                                        <li class="view view-first potrait">
+                                             <img src="images/folio/illustration.jpg" alt="illustration" />
+                                             <div class="mask">  
+                                                 <h2>New York</h2>                                   
+                                                 <a role="button" class="info" data-toggle="modal" data-target="#myModal4">Выбрать</a> 
+                                             </div>  
+                                        </li>                         
+                                        <li class="view view-second photography">
+                                          <img src="images/folio/guy.jpg" alt="guy" /><
+                                            <div class="mask"></div>
+                                            <div class="content">
+                                                <h2>Image Name</h2>                                 
+                                                <a role="button" class="info" data-toggle="modal" data-target="#myModal3">Выбрать</a>
+                                            </div>
+                                        </li> 
+                                        <li class="view view-tenth potrait"> 
+                                            <img src="images/folio/logs.jpg" alt="logs" /> 
+                                            <div class="mask">  
+                                                 <h2>woodsman</h2>
+                                                 <a role="button" class="info" data-toggle="modal" data-target="#myModal">Выбрать</a> 
+                                             </div>  
+                                        </li>   
+                                        
+                                        <li class="view view-tenth commercial">
+                                             <img src="images/folio/beach.jpg" alt="beach" /> 
+                                             <div class="mask">  
+                                                 <h2>New York</h2>
+                                                 <a role="button" class="info" data-toggle="modal" data-target="#myModal5">Выбрать</a> 
+                                             </div>  
+                                        </li>  -->                                                                                                       
+                                    </ul>
+                                </div>
+                              
+                            </div>                          
+                        </div>
+                    </li>
+
+                    <!--CONTACT PAGE-->
+                    <li id="contact" class="hidden">
+                        <div class="title-container" >
+                            <div class="shadow-img"></div>               
+                           <h2 class="rotate-out rotated">Контакты</h2><!--CONTACT PAGE TITLE-->
+                        </div>
+                        <div class="description">                           
+                            <div class="row">
+                                <div class="col-sm-12">
+                                    <div class="map-container">
+                                        <div id="map" style="width:100%;height:325px;"></div><!--GOOGLE MAP-->
+                                    </div>
+                                </div>
+
+                                <div class="col-sm-5">
+                                    <!--CONTACT DESCRIPTION-->
+                                    <h3 class="title">Наши контакты</h3>
+                                    <h6 class="sm-title"><span class="address-icon"><i class="fa fa-map-marker"></i></span>Б. Момышулы 2/4 блок 3, 4 этаж</h6>
+                                    <h6 class="sm-title"><span class="address-icon"><i class="fa fa-phone"></i></span><a href="tel:+77770003340">+77770003340</a></h6>
+                                    <h6 class="sm-title"><span class="address-icon"><i class="fa fa-envelope"></i></span>info@svadba.kz</h6>
+                                    <!--/CONTACT DESCRIPTION ENDS-->
+                                </div>
+                                <div class="col-sm-7">
+
+                                    <div class="mail-container">
+                                        <div class="cnmail result">
+                                            <div class="msg success-msg"><i class="icon svg-check"><!--?xml version="1.0" encoding="utf-8"?-->  <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="32" height="32" viewBox="0 0 32 32"> <path d="M16 2.688c-7.375 0-13.313 5.938-13.313 13.313s5.938 13.313 13.313 13.313c7.375 0 13.313-5.938 13.313-13.313s-5.938-13.313-13.313-13.313zM16 28.25c-6.75 0-12.25-5.5-12.25-12.25s5.5-12.25 12.25-12.25c6.75 0 12.25 5.5 12.25 12.25s-5.5 12.25-12.25 12.25zM22.688 11.25l-8.563 8.313-3-3c-0.313-0.313-0.813-0.313-1.125 0s-0.313 0.813 0 1.125l3.563 3.563c0.125 0.125 0.313 0.188 0.563 0.188 0.188 0 0.375-0.063 0.5-0.188l9.125-8.875c0.375-0.313 0.375-0.813 0.063-1.125s-0.813-0.313-1.125 0z"></path> </svg> </i><span>Ваше сообщение было сохранено!</span></div>
+                                            <div class="msg error-msg"><i class="icon svg-close-circle"><!--?xml version="1.0" encoding="utf-8"?-->  <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="32" height="32" viewBox="0 0 32 32"> <path d="M6.563 6.563c-5.188 5.188-5.188 13.688 0 18.875s13.688 5.188 18.875 0c5.188-5.188 5.188-13.625 0-18.875-5.188-5.188-13.625-5.188-18.875 0zM24.688 24.688c-4.813 4.75-12.563 4.75-17.375 0-4.75-4.813-4.75-12.563 0-17.375 4.813-4.75 12.563-4.75 17.375 0 4.75 4.813 4.75 12.563 0 17.375zM10.75 10l-0.813 0.75 5.313 5.25-5.25 5.25 0.75 0.75 5.25-5.25 5.25 5.25 0.75-0.75-5.25-5.25 5.313-5.25-0.813-0.75-5.25 5.25z"></path> </svg> </i><span> Извините, Сообщение не отправлено!</span></div>
+                                        </div>
+                                        <h3 class="title invert">Отправьте ваше сообщение</h3>
+                                        <!--CONTACT FORM-->
+                                        <form action="sendmail.php" method= "POST" class="form-horizontal" id="contact-form">
+                                            <div class="form-group">
+                                                <input name="name" class="form-control required" placeholder="Имя" data-placement="top" type="text">
+                                            </div>                                    
+                                            <div class="form-group">
+                                                <input name="email" class="form-control email" placeholder="Email" type="text">
+                                            </div>                   
+                                            <div class="form-group">
+                                                <textarea name="message" class="form-control" placeholder="Сообщение" rows="3"></textarea>
+                                            </div>
+                                            <div class="form-group">
+                                                <button type="submit" class="btn btn-success">Отправить</button>
+                                            </div>
+
+                                        </form><!--/#contact-form-->
+                                    </div>                      
+                                    
+                                </div>                          
+                                
+                            </div>
+                        </div>
+                    </li><!--/#contact-->
+                </ul> 
+
+                <div class="row mobile-nav-container">
+                    <!--SOCIAL NAV FOR MOBILE-->
+                    <ul class="mobile-social no-padding">
+                        <li>Святься с нами</li>
+                        <li><a href="https://www.facebook.com/"><i class="fa fa-facebook"></i></a></li>
+                        <li><a href="https://www.instagram.com/_svadba.kz_/"><i class="fa fa-instagram"></i></a></li>
+                        <li><a href="https://www.youtube.com/"><i class="fa fa-youtube"></i></a></li>
+                        <li><a href="https://www.linkedin.com/"><i class="fa fa-linkedin"></i></a></li>
+                    </ul><!--/.mobile-social-->
+                </div>               
+            </div><!--/.page-segment -->
+            <!--  <h6 class="copyright-text">Copyright © 2015 John Doe</h6> --> <!--if anyone wants copyright Texts--> 
+        </div>
+    </div><!--/.container -->
+   
+    <!--PORTFOLIO IMAGE MODAL LIST-->
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="myModalLabel">Ах, эти цифры…</h4><!--PORTFOLIO IMAGE TITLE-->
+                </div>
+                <div class="modal-body">
+                    <img src="images/27.jpg" class="img-responsive" alt="modal-image"><!--PORTFOLIO MODAL IMAGE-->
+                </div>
+                <div class="modal-footer">
+                    <div class="mf-content">
+                        <h5><b>Известный нумеролог страны раскрывает секреты</b></h5>
+                        <p>Загадочная и где-то неуловимая, всегда улыбчивая и открытая, деликатная и тонко чувствующая, она сразу же производит впечатление…ммм, когда кажется, что так не бывает. Ну, не может человек так идеально выглядеть внешне, быть эрудированным, грамотным, всегда-всегда дружелюбным, владеть приемами нумерологии, психологии и иметь счастливую, гармоничную семью. И ведь такой Айсулу Ахимову знаю не только я, если вдруг вы решите парировать моим предвзятым мнением. А потому вопросы из серии «как», я опускаю, это видимо какая-то не всем поддающаяся наука, зато о влиянии нумерологии на нашу жизнь, о свадьбах в 2017-ом и об индивидуальных цифрах для женщин и мужчин, мы с Айсулу поговорили.</p>
+                        <br>
+                        <img src="images/43.jpg" class="img-responsive" alt="modal-image">
+                        <p><b>-</b>Айсулу, ну что ж, старый год прошел и мы благополучно оказались в 2017-ом, чего ждать прикажете от «огненного петуха»? Каким он будет? Есть ли цифра, к которой «хозяин года» благосклонен?
+<br><b>А.А:</b> 2017-ый по нумерологии идёт под числом «10». Это некое завершение и обнуление. Завершение ранее начатых дел и проектов, итоги прежних усилий, которые приведут в конце года к определённому результату. «10» - ка в нумерологии - число Лидера. Это невероятные амбиции и рост. То, как мы проживем 2017-ый, будет показательным для достижения серьёзных результатов и успеха в последующие 12 лет. Минус: нужно спокойно пережить период, который станет неким проверочным, завершающим испытанием. Так как год связан с воинственностью и категоричностью, умейте идти на компромиссы и избегайте пустого соперничества. В политике и в карьерном плане 2017-ый выделит самых сильных и устойчивых, в творчестве же появятся новые звезды, успех которых будет долгосрочным.
+<br><b> - </b>Люди сегодня буквально помешаны на цифрах, причем, сдались даже скептики. Практически все тщательно подбирают особенные числа для своих торжеств. А насколько благосклонен этот год к свадьбам?
+<br><b>А.А:</b> Для создания семей, проведения свадебных торжеств, для замужества и беременности - 2017-ый, наверное, один из лучших. Разве что, месяц май можно исключить из списка дат для замужества. Пары, которые в этот год соединят свои сердца - имеют высокий шанс на долгие и прочные отношения. При этом, важно помнить, что нумерология - это индивидуальный подход и нужно непременно учитывать совместимость партнёров, воздействие на них «хозяина года» и другие нюансы. Как известно, свадьбы желательно проводить в период плюса, а это все нужно высчитывать. 
+</p>    
+                    <br>
+                    <img src="images/51.jpg" class="img-responsive" alt="modal-image">
+                    <br>
+                    <p><b>-</b>Оправдан ли такой ажиотаж и зацикленность людей на нумерологии? Ведь жили же мы как-то раньше без данной науки, хорошо себе жили и даже не задумывались о том, какую роль играют цифры в нашей судьбе? Может, лучше жить по принципу «меньше знаешь, лучше спишь?» 
+<br><b>А.А:</b> По большому счёту, я - противник фанатизма и зависимости. Будь то религия, идейные соображения, астрология, магия, нумерология в том числе. Также считаю, не профессиональным сведение к таким штампам, как: «А, все ясно, она (он) же Скорпион, Лев, Козерог и т.д...», или категоричный вердикт: «Да он же лгун по цифрам», либо излюбленное: «В СССР все было плохо/хорошо...». Я «за» информацию в разумном ее проявлении, если она способствует личностному росту и развитию. Живя в определенную эпоху (СССР), мы находились в некотором вакууме, не зная о существовании других миров, религий, традиций, мы были ограничены. С появлением Интернета мир стал информационно богаче. Скажу одно, нумерология точно не вредит, она помогает лучше и быстрее понять свои сильные и слабые стороны, не теряя годы на изучение их методом проб и ошибок. 
+<br><b>-</b> Часто обращаются к вам молодожены за консультацией? Что их больше всего беспокоит? И чем вы можете помочь? 
+<br><b>А.А:</b> Чаще обращаются по вопросу совместимости, чтобы избежать ошибок в дальнейшей совместной жизни. А предоставленная информация помогает им быть снисходительнее к слабостям друг друга, терпимее в кризисные периоды, помогает выявить и усилить лучшие качества. Судя по постоянству моих клиентов, визиты ко мне не пустая блажь (улыбается). А моя практика семейного психолога играет в данном вопросе не последнюю роль.   
+<br>- Если, к примеру, налицо несовместимость пары в браке, вы позволите себе смелый шаг озвучить мнение? 
+<br><b>А.А:</b> Я не провидец и не пророк, чтобы брать на себя такую ответственность. И к счастью, всегда есть исключения из правил. Лучше дать паре максимум информации о возможных подводных течениях, о том, как избежать, что наработать. Любые отношения и их устойчивый успех - это каждодневная работа и усилия двух людей.</p>
+<br>
+                <img src="images/01.jpg" class="img-responsive" alt="modal-image">
+                <br>
+                <p> - Мужчины и женщины – два разных полюса, лица с разными предпочтениями. Какие цифры их верные друзья и что чревато для полов? 
+<br><b>А.А:</b> Все абсолютно индивидуально, в психоматрице не существует плохих или хороших цифр. Любая из них в недостатке или сильной доминации может дать обратный эффект. Если без обобщения, то для женщин хороша в нумерологии «7»-ка и «5»-ка. Первая означает удачу и счастье, вторая – многогранность и мягкость характера. Мужчинам, на мой взгляд, необходимы цифры: «1» - лидерские качества, мужественность, храбрость, сила воли. «4» -  терпение и умение доводить начатое до конца, не перегорая в середине пути, «6» - финансовая устойчивость, умение правильно вкладывать и должным образом относиться к финансам.   
+<br><b>-</b> Да, «7»-ка у нас общеизвестная «королева», у меня, к примеру, их целых четыре. Так мне радоваться или на лицо «перебор»? Я была бы не против абсолютно счастья)…  
+<br><b>А.А:</b> Даже счастливая и любимая всеми «7»-ка в избытке даёт обратный эффект. Но, опять таки, надо смотреть картинку в целом, соответствие с другими цифрами, либо их отсутствием. Что касается Вас, то в Вашем конкретном случае можно выделить сильный и независимый характер. Большое количество цифр «7» в психоматрице часто даёт завышенные ожидания и высокую планку как для себя (перфекционизм), так и в отношении других людей. Партнер в данном случае нужен по-настоящему сильный и самодостаточный, с которым можно позволить себе быть слабой. 
+<br><b>-</b> Сегодня вы считаетесь одним из ведущих нумерологов страны, к вам на прием не мечтает попасть разве что самый нелюбопытный человек. Отечественные (и не только) каналы и радио также с удовольствием транслируют ваши знания в этой области. Как вы поняли, что это «ваше»?  
+<br><b>А.А:</b> Я склонна верить в то, что случайности не случайны. Однажды узнав свою нумерологию, как я тогда думала «случайно», поняла, что могла бы работать с людьми. Будучи уже в то время практическим психологом и экономистом (по первому образованию), увлечение нумерологией перешло в профессиональную деятельность.
+<br><b>-</b> Вы появились в публичной сфере, казалось бы, внезапно, но стали «своей» достаточно быстро…  
+<br><b>А.А:</b> Публичная среда никогда не были для меня чуждой. В давнем прошлом у меня был опыт работы ведущей (программа «Астропрогноз» на КТК), модели (титулованная «Мисс» на конкурсах красоты) и даже киноактрисы. Вполне возможно, гены сыграли свою роль (отец Айсулу - актер Димаш Ахимов). Но было время, когда публичность отошла на второй план, так как несколько лет я жила за границей, искала себя, «росла» и набиралась опыта по второму образованию. И когда осознала, что готова вернутся на ТВ и радио, поделиться знаниями и опытом в новом качестве, вы меня увидели как психолога-нумеролога.
+<br><b>-</b> Расскажите о своем супруге, кто избранник этой  умопомрачительной женщины? Вы его прячете, а это подогревает слухи, к примеру, даже вездесущий интернет не помог мне в этом вопросе. Кто-то говорит, он миллионер, кто-то считает, иностранец, а вы что скажете? Тут замешаны цифры, признавайтесь? 
+<br><b>А.А:</b> Со своим мужем я познакомилась гораздо раньше нумерологии и даже до психологии. Наверное, при выборе руководствовалась интуицией, благо она всегда была чутко развита (улыбается). В жизни я придерживаюсь нескольких принципов, один из которых – «Не выставлять напоказ личную жизнь», в чем супруг меня всецело поддерживает. Дабы развеять любопытство многих (наиболее чаще всего в поисковике после меня выходит вопрос: кто мой муж?), я скажу, он не иностранец, как многие считают, а казахстанец.  - Наверняка, цифры правят бал в вашем доме?
+<br><b>А.А:</b> Мы в семье, в том числе и дети, знаем, какой период у каждого (год подъема или спада). Чем он характерен и какие возможности несёт. Но без фанатизма! Ни я, ни муж не следим каждый день за цифрами.
+<br><b>-</b> А кто в доме хозяин? 
+<br><b>А.А:</b> Я родилась в семье, где отношение к мужчине оценивалось не словами, а поступками. Моя мама, будучи коренной москвичкой, выйдя замуж уехала из Москвы вслед за супругом, простым парнем, а не известным артистом, коим он является сейчас. Я, выйдя замуж за своего мужа, не раздумывая поехала на несколько лет в закрытую исламскую страну по дипломатической миссии. Это было нелегко. Мне был 21 год, период романтических прогулок, а в Иране это недопустимо, так как всегда могла остановить полиция нравов и спросить документы, подтверждающие что мы супруги. Хотелось походов в кино или танцев до упаду, но и это было табу. Зато сейчас я понимаю, что это был самый прекрасный и бесценный опыт в моей жизни - становление меня и нашей семьи. И я ни за что не поменяла бы ничего, даже если была бы возможность. И как Вы думаете, теперь, имеет ли смысл отвечать на вопрос, кого мы с дочерями считаем в доме хозяином? (улыбается)
+</p>
+<br>
+                <img src="images/13.jpg" class="img-responsive" alt="modal-image">
+                <br>
+                <p>
+                <b>P.S:</b> Нумерология – это наука о цифрах. О тайнах, которые они в себе заключают. Основоположником являлся дядюшка Пифагор. Хотя, как известно, числами пользовались ещё первобытные племена, поэтому, можно себе представить, сколько времени числа накапливали в себе информацию. К слову, в нумерологии все числа должны быть сведены к однозначному показателю, путем сложения дня рождения, месяца и года рождения. И за каждым получившимся числом закреплены определённые свойства, понятия и образы. Полное знакомство с наукой, может нешуточно изменить и улучшить вашу жизнь. 
+                <br> <b>Ваша, svadba.kz</b>
+                </p>
+                    </div>                      
+                </div>
+            </div><!-- /.modal-content -->
+        </div><!-- /.modal-dialog -->
+    </div><!-- /.modal -->
+
+    <div class="modal fade" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel2" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="myModalLabel2"><b>Самые известные и прочные творческие пары Казахстана</b></h4><!--PORTFOLIO IMAGE TITLE-->
+                </div>
+                <div class="modal-body">
+                        <img src="images/42.jpg" class="img-responsive" alt="modal-image">
+                    <!--PORTFOLIO MODAL IMAGE-->
+                </div>
+                <div class="modal-footer">
+                    <div class="mf-content">
+                        <h5><b>Кто-то считает, что представители одной профессии, строящие совместный быт – это «мама не горюй». Во-первых, в один прекрасный день им наскучит сходство интересов, во-вторых, как сказал, Женя Лукашин из новогодней «Иронии»: «Им придется каждый день мелькать друг у друга перед глазами, туды-сюды, туды-сюды». Другие, в противовес им, считают, что именно близкие по духу люди, те, что занимаются общим делом и при этом живут под одной крышей - самые долговечные пары, эдакие заговорщики и соратники. Соглашаться или отрицать, решать дилеммы либо впадать в дискуссии можно много и долго, тем временем, как творческие пары наглядным примером показывают: тандем – их конек.</b></h5>
+                        <br>
+                        <img src="images/12.jpg" class="img-responsive" alt="modal-image">
+                        <br>
+                        <p>
+                            Согласна, что про этих двоих не сказал, не написал и не снял сюжет разве что, ленивый и я ни чем новым, возможно, не удивлю, но как только речь заходит о самых популярных семейных дуэтах, по сей день чаще всего вспоминают именно их. И как вы понимаете, не зря, ведь союзу <b>Каракат Абильдиной</b> и <b>Кыдырали Болманова</b> уже порядка 20 лет, если счет вести с начала их дружбы (1996 год). Хотя поначалу они воспринимали друг друга как названные брат и сестра, а полстраны, любящие группу АБК, в частности, женская ее половина, «сохли» по харизматичному Кыдырали Болманову. Его статус «мачо» вполне устраивал, но до тех пор, пока между двоими не случилось того, что должно было случиться. Я, любовь имею в виду, а вы что подумали? А это, минуточку, гораздо больше всяких там названных родственных уз. Ох, уж, эти длительные совместные гастроли. Кстати, после союза Кыдырали и Каракат и другие участники коллектива стали жениться как «угорелые». И сегодня, помимо совместных хитовых песен, у пары растут четверо замечательных парней, на подходе пятый ребенок (поговаривают, девочка). И на лицо, благополучный семейный подряд: детская творческая школа и удачно реализованное желание внести вклад в кукольную промышленность страны. 
+                        </p>
+                        <br>
+                        <img src="images/14.jpg" class="img-responsive" alt="modal-image">
+                        <br>
+                        <p>
+                            Еще одни творческие «старожилы» - <b>Парвиз Назаров</b> и <b>Алия Есенова</b>. Они встретились в далеком 1991 году. Когда молодой, никому не известный и скорее всего, очень амбициозный таджикский певец, приехал покорять Казахстан, в виду сложных политических ситуаций на родине. И попал на самый трендовый вокальный конкурс того времени – «Азия Даусы», это уже в виду своего таланта. Кстати, этот конкурс стал для двоих судьбоносным, ведь именно там они впервые и встретились. И что называется, не остались равнодушными. Затем Парвизу выпала честь выступать на самой народной площадке того времени – «Тамаша», директором которой являлся отец Алии Есеновой. Как позднее вспоминала продюсер и супруга известного певца, любимый папа, прознав о чувствах влюбленных, долгое время был против этих отношений. А потому, Парвизу Назарову, еще долго пришлось доказывать строгому родителю свои искренние чувства. И пока Лукпан Есенов не сжалился над молодыми, непокорной дочери даже пришлось покинуть отчий дом. Сегодня она об этом ни чуточки не жалеет, ведь за плечами 23 года совместной жизни, плодотворный творческий тандем и трое детей, старшему из которых уже впору самому вести в дом невесту. 
+                        </p>
+                        <br>
+                        <img src="images/15.jpg" class="img-responsive" alt="modal-image">
+                        <br>
+                        <p>
+                            <b>Беркут</b> же влюбился в будущую супругу прямо на собственном дне рождения. Потом еще два года добивался Викторию (настоящее имя <b>Аишы</b>, младше Беркута на 12 лет) и два раза делал девушке предложение, от которого она посмела отказаться. А ведь Беркут слыл еще тем «завидным холостяком», отправиться к алтарю с которым безрезультатно мечтала не одна красотка. У Аишы это, к счастью, получилось. Иначе глядишь, так и ходил бы Беркут сольным певцом из разряда холостяков. Ну, а если кроме шуток, то эти двое изрядно помучали друг друга, прежде чем быть вместе. Поначалу отказывалась от собственного счастья она, считая, что они слишком разные, затем устал осаждать неподступную крепость он. И казалось бы, на этом «концерт аяқталды», но, осознав вовремя собственные ошибки – предложение «руки и сердца» пришлось делать Аише. Свадьбу сыграли через месяц после примирения, видимо, чтобы не передумать. Сегодня у пары двое мальчишек (и это не предел, говорят они), дом в 500 «квадратов», двери которого всегда открыты для родных и близких и множество зажигательных «тойских» песен. Ну, что сказать, не зря они уверенно поют: «барі де жақсы болады», как говорится, испытано на себе.
+                        </p>
+                        <br>
+                        <img src="images/16.jpg" class="img-responsive" alt="modal-image">
+                        <br>
+                        <p>
+                            Она - некогда первая солистка групп «Дара» и «Жигер», он - в прошлом один из музыкантов коллектива «JCS» и «Аркас». Сегодня <b>Султана</b> и <b>Нурлан Каражигитовы</b> - известные музыкальные продюсеры, которые 17-ый год строят совместный быт и растят сына. Но все случилось не сразу. Вначале была мимолетная первая встреча, о значимости которой история умалчивает. Затем в далеком 1998 году - вторая. Когда Султана не дала Нурлану свой номер телефона, несмотря на ночные бдения в кафе, романтическую эйфорию от которых нарушило к утру металлическое «поднимайте ноги». Так уборщица застала не перестающую болтать о чем-то своем парочку. Он тогда расценил ее поступок как отказ и нежелание общаться, она – всего-навсего, не имела «мобильника». Ну, мало тогда зарабатывали наши артисты и наличие персональной трубки было практически непозволительной роскошью. Зато третья встреча, случившаяся пару-тройку лет спустя, стала окончательной и бесповоротной.
+                        </p><br>
+                        <img src="images/17.jpg" class="img-responsive" alt="modal-image"><br>
+                        <p>
+                            А вот супруг <b>Толкын Забировой</b> - ее собственный продюсер. <b>Сафар Бабаев</b> - знаковая фигура в казахстанской эстраде. В свое время он давал старт многим отечественным проектам. Но нахождение “рядом с телом” этой певицы он не доверил никому. И именно он взрастил из молодой “оперной” Толкын еще и эстрадную звезду. А началось все с банального телефонного звонка, когда Сафар Бабаев искал хороший женский вокал для длительных гастролей. Из двух предоставленных ему неизвестных номеров телефона – номер Толкын Забировой оказался не занят. Вот, что значит, звезды сложились как надо. После этого как не поверить в “его величество, случай?” Тогдашние гастроли оказались плодотворными и конечно же, романтическими, так как дали старт новым отношениям. На сегодня семейная жизнь Толкын Забировой и Сафара Бабаева – это 20 счастливых лет и трое замечательных сыновей. 
+                        </p><br>
+                        <img src="images/18.jpg" class="img-responsive" alt="modal-image">
+                        <br>
+                        <p>
+                            Неповторимая и экстравагантная джазвумен <b>Айгуль Бабаева</b>, которую в народе шутки ради зовут “казахской Гузеевой”, выбрала себе в мужья экс-гитариста <b>Михаила Романюка</b>. Ныне он является бизнесменом и по-совместительству ее продюсером. Когда-то эту пару соединило ресторанное прошлое. И когда-то именно из-за чувств Айгуль вернулась с длительных московских гастролей на родину, хотя могла навсегда остаться в российской столице, где ей предлагали руку, сердце и московскую прописку. Но выбор в пользу Михаила оказался приоритетнее. Итог: пара вместе уже немалых 30 лет, имеет двоих дочерей (одна из которых – дочь Михаила от первого брака, но находится с Айгуль в прекрасных отношениях), воспитывает внуков, не прекращает совместное творчество (Михаилом для Айгуль было проведено несколько сольных концертов) и ведет семейный бизнес. Ну, и, кто теперь осмелится спорить с прочностью браков у “цеховых?”
+                        </p><br>
+                        <img src="images/19.jpg" class="img-responsive" alt="modal-image">
+                        <p><br>
+                            Супруга экс-вокалиста некогда популярной группы «АБК» и ныне лидера не менее популярной команды «К 7» <b>Ерлана Кокеева</b>, тоже представитель творческой профессии. <b>Анара Кокеева</b> в прошлом классический музыкант, после преподавала вокал и работала музыкальным редактором. А когда помимо творчества муж решил проявить себя и в бизнесе, стала его «правой рукой». «Ретро-клуб Кокеева» быстро обрел популярность вначале в южной столице, затем обжился в «северной». Так вот более 25-ти лет Ерлан на сцене, 20 из них - счастливо женат и имеет четверых детей. Три девочки и долгожданный мальчик, который родился в 2015 году. Так что будущего гитариста Кокеев вырастит. Свой рецепт счастья артист считает не сложным, но индивидуальным: абсолютная гармония в их семье воцарилась, когда двое перестали друг другу «Якать» и «ТЫкать», научившись «МЫкать».
+                        </p><br>
+                        <img src="images/20.jpg" class="img-responsive" alt="modal-image">
+                        <p><br>
+                            А помните, всеми любимый «Дуэт L» (создан в 1994 г.), состоящий из прекрасных вокалисток <b>Ларисы Ивановой</b> и Людмилы Ким? Да, тот, что без труда снискал себе любовь и славу не только в стране, но и за ее пределами, особенно после успешного участия на «Утренней звезде». «Донна осень» Еркеша Шакеева в то время покорила всех. Между прочим, это <b>Кайрат Кульбаев</b> постарался, тогда еще просто хороший знакомый девчонок, отправивший композицию на прослушивание московским членам жюри. Песня покорила, вокал тоже и предложения посыпались к казахстанским певицам как из рога изобилия, дав старт нескончаемым поездкам между Алматой и Москвой, интервью, записям и фотосессиям. Между тем, росли и взаимные чувства Кайрата к Ларисе, которая предложение руки и сердца получила прямо по телефону. И? Практически 23 года вместе, теперь уже трое детей (третий родился совсем недавно) и реанимированный в 2013-ом, бессменный «Дуэт L». 
+                        </p><br>
+                        <img src="images/21.jpg" class="img-responsive" alt="modal-image">
+                        <p><br>
+                            Оперная дива <b>Нуржамал Усенбаева</b> и композитор, политик, бизнесмен <b>Толеген Мухамеджанов</b> вместе давно. Однако жить вместе стали не сразу. Прежде чем они создали общий очаг, они успели побывать в других браках. Со дня первой встречи и момента, который стал для двоих судьбоносным, прошло целых десять лет. Тогда Толеген Мухамеджанов впервые услышал как поет обладательница колоратурного сопрано, удивительно красивая Нуржамал, что и стало решающим шагом для построения новых отношений. Как говорится, выбрал сердцем – услышав голос. За время более 40-летней совместной жизни пара имеет четверых детей и внуков.  
+                        </p><br>
+                        <img src="images/22.jpg" class="img-responsive" alt="modal-image">
+                        <p><br>
+                            «Зимние ливни», «Золотая монета», «Асыл ажем»…Эти песни <b>Рахата Турлыханова</b> были популярны во времена миллениума. Молодой да ранний обладатель знатных корней Рахат Турлыханов, был тогда супер-мега-звездой, буквально открытием 2000-го года. Песня за песней, дорогие клипы, номинации, зарубежные поездки, популярные композиторы, которые творили для юного мальчишки. А спустя годы, когда Рахат покончив с творчеством ударился в общественную деятельность, требовалось завершить образ молодого и перспективного политика семейным статусом. Наверняка, оказаться в роли супруги популярного экс-артиста мечтали многие, но выбор пал на обладательницу не менее знатных корней,<b>Жамилю Абилову</b>, дочь небезызвестного политика Булата Абилова. Жамиля также близка к творчеству. Сегодня она является главным редактором модного глянца и арт-директором самого ожидаемого фэшн-проекта «Mercedes-Benz Fashion Week». Кстати, семейный стаж Рахата Турлыханова тоже достаточно весомый. Парень женился в 19 лет и уже более 10 лет в браке. За это время у пары родилось трое детей (два мальчика и девочка) и Рахат не исключает возможности вновь вернуться на сцену. Ну, что, кто готов послушать новые песни Рахата Турлыханова? 
+                        </p><br>
+                        <img src="images/23.jpg" class="img-responsive" alt="modal-image">
+                        <p><br>
+                            Она появилась на небосклоне казахстанского шоу-бизнеса и воплотила в своем творчестве сразу несколько направлений. Классическая музыка с ее инструмента лилась интерпретированной с другими музыкальными течениями, казалось, на первый взгляд несовместимыми. И <b>Лана</b> сразу же завоевала свою армию поклонников, определенную нишу, друзей и даже собственный стиль в одежде. А вот с личной жизнью она, видимо, решила повременить, так как связала себя узами брака достаточно поздно (свадьба была в 2010 г., 38 лет). А может, просто не могла встретить «того самого», хотя с московским режиссером, психологом и ныне любимым супругом <b>Константином Саркисяном</b> встречалась как-то на дружественной вечеринке в Москве. Продолжения отношений тогда не последовало. И лишь после совместной работы над одним из своих клипов, она поняла, это близкий по духу человек. В результате такого творческого тандема на свет появился сын Георгий (6 лет, пара сейчас живет в Москве). Причем, как только артистка стала замужней дамой, она напрочь забыла о тусовках, которые раньше были для нее «number one» и пальму первенства в семье отдала мужу, решив, что для восточной женщин важней всего «погода в доме» и муж, считающий, что он «голова». 
+                        </p>
+                        <img src="images/24.jpg" class="img-responsive" alt="modal-image">
+                        <p><br>
+                        <b>Мадина Садвакасова</b> после первого неудачного брака решила свой выбор остановить на представителе творческой профессии, который как никто другой поймет все превратности индустрии музыки. То бишь, гастроли, поздние репетиции, многочасовые сьемки клипов. А Это вам не картошку на огороде выращивать. И как вы понимаете, на поиски такого ушел не один день. Но зимой 2014 года это, наконец, случилось. Режиссер одного из известных отечественных каналов смог-таки завоевать красавицу певицу. Телефон последней модели и кольцо с бриллиантом завершили конфетно-букетный период и <b>Олжас Смагулов</b> услышал «да» в ответ. Влюбленные узаконили свои отношения (8 января), сыграв после этого веселую свадьбу на 300 человек. Уже третий год певица познает радость материнства (сын) и продолжает заниматься творчеством, которое стало еще более ярким. Кстати, поначалу для певицы являлась камнем преткновения разница в возрасте (Олжас младше Мадины на 6,5 лет), но разве не твердит без устали народная молва, что «любви все возрасты покорны»? А вы, как считаете? 
+                        </p>
+                        <br>
+                        <img src="images/25.jpg" class="img-responsive" alt="modal-image">
+                        <p>
+                            Экс-гитарист единственной в своем роде популярной казахстанской этно-рок группы «Улытау», <b>Макс Кичигин</b>, за невестой далеко ходить не стал и тоже отыскал ее в творческой среде. Несказанная радость для весьма разборчивого парня. Как оказалось, с телеведущей, певицей, музыкантом и литературным автором <b>Зарой Есенаман</b>, они понимают другу друга с полуслова–полувзгляда, порой даже думают одинаково – делится музыкант. 2010 год стал для влюбленных знаковым, Макс и Зара связали себя узами брака. Стоит отметить, что эти двое – жутко скрытные натуры, с них впору детективы писать. Они особенно не афишируя свое решение -  тихо поженились в кругу родных и близких, а потому, для многих это событие стало открытием. Зато сегодня у пары растет дочь и впереди много планов на дальнейшую творческую жизнь.
+                        </p><br>
+                        <br>
+                        <img src="images/26.jpg" class="img-responsive" alt="modal-image">
+                        <p><br>
+                            Творческими долгожителями можно назвать и <b>Мираса</b> с <b>Куралай</b>, которые вместе уже более 15 лет. Семейный дуэт Бекжановых прочен и неразлучен как в семейной жизни, так и на сцене, они повсеместно дарят казахстанским слушателям свои лиричные хиты и слывут среди коллег по цеху самыми неразлучными. То ли сценическая фишка, то ли действительно Мирас не может и минуты без Куралай прожить, но певец предпочитает всегда держать супругу за руку, а она, естественно, не противится. С улыбкой глядит на мужа и как истинная казахская жена всегда оставляет главное слово за ним. Переехав из родного Актюбинска в Алматы, они обзавелись новым домом из 8 комнат, четвертым ребенком и продолжают создавать новые песни.
+                        </p>
+                        <br>
+                        <img src="images/28.jpg" class="img-responsive" alt="modal-image">
+                        <br>
+                        <p>
+                            Глава еще одного семейного дуэта – певец <b>Жанболат</b>, был старше своей избранницы на 5 лет. Они поженились когда ему было 23, а <b>Жазире</b> 18. То есть, он ее украл, такая модная по тем временам традиция. Поначалу жизнь у них была не слишком уж и радужной: строгая енешка, многодетная семья мужа, приходилось продавать на базаре и даже недоедать, когда решили жить самостоятельной жизнью в Алматы. Но все это помогло им воплотить в реальность мечты о сцене, путь к которой начался с ресторана. Так прошло 20 совместных лет и сегодня впору справлять фарфоровую свадьбу. Секрет долголетия отношений от певицы Жазиры гласит: нужно учиться уступать, терпеть, не действовать на нервы, доказывая кто круче и как бы это сказать, не «лечить» друг друга. Жену «пилу» мало кто выдержит. А еще, пара мечтает о втором ребенке, ведь их единственному сыну уже 19. Совсем взрослый и не исключено, может повторить родительский опыт «раннего» брака. 
+                        </p>
+                        <br>
+                        <img src="images/29.jpg" class="img-responsive" alt="modal-image">
+                        <br>
+                        <p>
+                            Если говорить о самых громких свадьбах за последнее время, то невозможно не вспомнить лето 2015-го, когда женились лидер группы «Мистерионс», <b>Арман Конырбаев</b> и обладательница самой ангельской улыбки, <b>Аша Матай</b>. Кстати, для Армана это были первые серьезные отношения, которые сразу же переросли в семейные. Поначалу молодые долго скрывали свои чувства, отнекивались и твердили «друзья», вопреки горящим глазам и «целующимся» фоткам из Инстаграмма. Озвучили решение создать семью лишь в преддверии торжества, когда были уверены в чувствах и прочности будущего союза. Свадьба, на которой собрался весь цвет казахстанского шоу-бизнеса, пела и плясала, об этом тое еще долго говорили после. В 2016 году у пары родилась дочь, которую нарекли Асылым, теперь в Инстаграмме они зовутся как #ААА#. А ведь поначалу эти двое совсем не планировали для себя творческих половинок, но такова жизнь полная парадоксов. И возможно скоро, мы услышим новый дуэт. 
+                        </p>
+                         <br>
+                        <img src="images/30.jpg" class="img-responsive" alt="modal-image">
+                        <br>
+                        <p>
+                            Поначалу скрывала от общественности свои отношения с продюсером и певица <b>Луина</b>. Еще больше избегал этой темы сам <b>Жомарт Сулейменов</b>, предупреждая заранее не спрашивать о личной жизни и отношениях со своей подопечной. Но, все тайное, как вы знаете, становится явным. Известно, что пара живет в гражданском браке уже порядка пяти лет, тесно общается с родственниками друг друга, а Луина прекрасно ладит с двумя детьми Жомарта от первого брака, которые обожают свою…нет, мачехой Луину язык не поворачивается назвать, скажем так, избранницу отца. А скрывали наверняка по ряду причин: боязнь людской молвы, считали этот шаг идущим вразрез с имиджем (артистов любят холостых), а может, просто хотели испытать отношения временем, прежде чем идти на серьезный шаг. Кстати, не так давно продюсер сделал официальное предложение своей подопечной, так что, ждем свадьбу, Луина и рожайте уже быстрее общих детей, мы не перестанем тебя любить даже замужней!   
+                        </p>
+                         <br>
+                        <img src="images/31.jpg" class="img-responsive" alt="modal-image">
+                        <br>
+                        <p>
+                            <b>Диана Шарапова</b> – леди харизматичная, которая выбрала себе в спутники жизни не менее харизматичного избранника. Ви-джей на телевидении, а теперь и личный директор звезды, <b>Роман Миронов</b>, всегда заставлял девушек обернуться ему вслед. Зато сам, наверняка, не раз обращал внимание на певицу с особым вокалом и неординарной внешностью. Хотя если вспомнить их рассказ о знакомстве, то они с улыбкой признавались, что в первую встречу друг другу совсем не понравились. Симпатия, искры и всякая такая романтическая блажь произошли уже при следующей встрече, но спустя года 3-4. И больше они не расставались. Алексу Романовичу пошел третий год, пара в ожидании второго ребенка.
+                        </p>
+                         <br>
+                        <img src="images/32.jpg" class="img-responsive" alt="modal-image">
+                        <br>
+                        <p>
+                            В очаровательную <b>Айдану Меденову</b> не влюблен был разве что бессердечный, к коим не относится Алишер Нуржанов, продюсер групп «ФМ» и «Индиго». Он не смог устоять перед красотой и чистотой юной прелестницы из «Кешyou» и как только утряс все нюансы с прежним браком, который был до встречи с <b>Айданой</b>, сразу же принялся всерьез ухаживать за певицей. Девушка не сразу восприняла всерьез ухаживания новоиспеченного претендента, видимо, не верила в искренность намерений парней из шоу-бизнеса, либо, имела неудачный опыт. Но узнав Алишера поближе, поняла, что он не только нравится ей, но и вызывает уважение, стойко добиваясь полного доверия к себе. Не исключено, что разница в возрасте сыграла в этой истории свою положительную роль. Так список «певица-продюсер» пополнился еще одной парой. Свадьба пары прошла в 2015 году, после окончания контракта у Айданы в самом популярном герлз-бенде страны. Сегодня у влюбленных подрастает дочь Амина (1,5 года), которая прекрасно ладит с детьми Алишера от первого брака (два мальчика).  А певица, в тандеме с супругом, успешно работает над своим новым, сольным творчеством, новые песни из которого уже пришлись по вкусу казахстанскому слушателю.
+                        </p>
+                        <br>
+                        <img src="images/33.jpg" class="img-responsive" alt="modal-image">
+                        <br>
+                        <p>
+                            Шоу-мен и телеведущий <b>Алан Черкасов</b> - мужчина серьезный, так как в момент разгара серьезных отношений, мягко говоря, озвучил будущей супруге свое пожелание: «Либо я, либо шоу-бизнес». Экс-солистка групп «Индиго» и «ФМ» <b>Анастасия Клещенко</b>, как девушка умная и по-восточному кроткая, выбрала первое. Все-таки семейное счастье, любовь и гармония - превыше всего. Да и ребенок пары должен был уже вот-вот родиться, а семейных хлопот – невпроворот. Если вспомнить их историю, то знакомство произошло за лет 6 до свадьбы (торжество минуло в 2015 г.), когда Настя была в других отношениях, Алан наверняка, тоже и двое не сразу заметили, что пазл мог сойтись. Заметили гораздо позже, но сразу поняли, что интересны друг другу. Особенно это проявилось во время совместной поездки на отдых, куда Алан буквально умолял отправиться Настю. Как вы поняли, никто об этом сейчас не жалеет. Сегодня у пары подрастает малышка Арнэла (1,3 года), которая стала вторым ребенком певицы (также есть дочь Жасмин от первого брака) и первенцем известного шоумена, который от переполняющих эмоций даже запел. Теперь зарабатывать вокалом будет глава семьи.
+                        </p>
+                        <br>
+                        <img src="images/34.jpg" class="img-responsive" alt="modal-image">
+                        <br>
+                        <p>
+                            <b>Камила Курбани</b> и <b>Мухамед Жанов</b> вместе уже тринадцать лет. Свадьба прошла в 2008 году, до этого были 4 года романтических отношений. В общей сложности, парой было пройдено первое знакомство на конкурсе, когда Мухамед пришел, увидел, но не победил, а напротив влюбился в юную конкурсантку Камилу, к слову, очень серьезную барышню. Затем поиск телефона и осаждение неприступной крепости, так как девушка оказалась далеко не легкой добычей, после отношения, прошедшие нешуточную притирку характеров, мнений, нравов, запуск собственного дизайнерского бренда (Kamila Kurbani), где главным критиком и если хотите, музой, выступает муж и рождение двух прекрасных малышей (сын и дочь), одному из которых 8, другой 5. Кстати, свадеб у этой пары было целых три, одна в Таразе (30 апреля 2008 г.) – на родине мужа, вторая в Алматы – на родине жены, третья в Лас-Вегасе – на родине любви и романтики.
+                        </p>
+                        <br>
+                        <br>
+                        <img src="images/35.jpg" class="img-responsive" alt="modal-image">
+                        <br>
+                        <p>
+                            Что не говори, а молодежь таки наступает на пятки старожилам шоу-бизнеса. И не только в вопросах творчества. И также как и старшие коллеги по цеху, стойко проходят испытание временем и чувствами. Еще один претендент, которого нельзя не внести в наш список, это экс-суперстаровец, актер, певец и шоумен <b>Арыстан Мырзагереев</b>, песня которого «Тили-тили тесто» стала буквально пророческой, ведь немногим погодя он встретил девушку своей мечты и женился. Избранницей Арыстана стала очаровательная девушка с тонким станом, экс-участница «Мисс Казахстан» и «Казак Аруы», <b>Айгерим</b>, после взявшая фамилию мужа. Пара уже третий год в официальном статусе и имеет дочь (Айару 1.2 года). Айгерим и Арыстан познакомились на одном их проводимых ими светских мероприятий, понравились друг другу и после решили жить и работать вместе. «У меня самая красивая и нежная жена, даже ругать ее язык не поворачивается» - делится шоумен. Кто бы сомневался, ведь она такими влюбленными глазами смотрит на мужа.     
+                        </p>
+                        <br>
+                        <br>
+                        <img src="images/36.jpg" class="img-responsive" alt="modal-image">
+                        <br>
+                        <p>
+                            Отечественная киноиндустрия тоже не дремлет. Представители профессии стоят не только на страже «высочайшего из искусств», но и на «передовой» личной жизни. Кстати, не верно думать, что ковать собственное счастье уместно лишь в молодости. К примеру, известная актриса <b>Гульнар Дусматова</b>, остающаяся востребованной и популярной со времен своей первой картины «Погоня в степи» (1979г.), стала по-настоящему счастливой в бальзаковском возрасте, когда встретила режиссера <b>Хуата Ахметова</b>. Хуат тоже далеко не юнец, имел за плечами неудачные отношения и также был в поиске «своего человека». В Москве это не удалось, в Казахстане же сбылась его мечта, а именно на проекте «Человек-ветер» (2007г), куда буквально силком привел Гульнар в качестве актрисы Фара (актер). Можно сказать, что этот большой и добрый человек, стал их ангелом-хранителем. Теперь у пары общий дом, совместная работа, любимый пес и дочь Дусматовой от первого брака. Так что, любви все возрасты покорны.
+                        </p>
+                        <br>
+                        <br>
+                        <img src="images/37.jpg" class="img-responsive" alt="modal-image">
+                        <br>
+                        <p>
+                            Еще одна не менее популярная актриса, которая построила гармоничные отношения с режиссером, это красавица <b>Аружан Джазильбекова</b>. Сегодня ей достаются практически все ведущие роли, но, наверняка не потому, что <b>Ахат Ибраев</b> работает в киноиндустрии, а потому, что девушка действительно талантлива. Хотя, как не крути, весомую роль в становлении своей супруги, как киноактрисы, сыграл именно Ахат, в полнометражных проектах которого дебютировала юная Аружан («Санжар мен Кайсар», «Хранители солнца»). В киноиндустрии поговаривают, что молодой режиссер буквально без ума от своей супруги, она, можно сказать, Галатея для своего Пигмалиона. Свадьба влюбленных прошла в 2014 году, детей пока нет. 
+                        </p>
+                        <br>
+                        <br>
+                        <img src="images/38.jpg" class="img-responsive" alt="modal-image">
+                        <br>
+                        <p>
+                            Трудится над своей «Галатеей» и любвеобильный <b>Рустем Абдрашев</b>, который создал семью в третий раз и построил отношения с молодой актрисой <b>Мадиной Есмановой</b>, сыгравшей молодую Сару Назарбаеву в нашумевшем фильме-эпопее «Путь лидера». Почему не удалось сохранить прежние отношения и как так получилось, режиссер умалчивает, ссылаясь на то, что это его выбор, его судьба и даже если хотите, его грех. Однако, со всеми детьми от прежних браков (дочь – певица Инкар, сын – композитор Абулхаир), Рустем Абдрашев придерживается замечательных отцовских отношений, считая это своим человеческим и отцовским долгом. Сейчас в семье режиссера подрастает еще один ребенок (сын), от брака с Мадиной Есмановой и теплятся большие планы на дальнейшее киношное будущее.
+                        </p>
+                        <br>
+                        <br>
+                        <img src="images/39.jpg" class="img-responsive" alt="modal-image">
+                        <br>
+                        <p>
+                            <b>Назгуль Карабалина</b> - в прошлом театральная актриса. <b>Азамат Сатыбалды</b> – ее коллега по цеху, театральный и киноактер. В свое время они играли вместе в казахском театре драмы имени Ауэзова, не раз вызывая восхищение публики профессиональными навыками и идеальной совместимостью. Кстати, именно любовь к творчеству, общие интересы и общий ВУЗ (им. Жургенова), свели их в один прекрасный день вместе. Так, со студенческой скамьи, до сих пор вместе, говорят они, по сей день являясь одной из ярких пар в стране. В настоящее время Назгуль занимается организацией мероприятий разного уровня, Азамат, по-прежнему, предан храму Мелопомены, совмещая театральную деятельность с индустрией праздников и развлечений. У пары растет сын и имеется 18-летний стаж совместной жизни. 
+                        </p>
+                        <br>
+                        <br>
+                        <img src="images/40.jpg" class="img-responsive" alt="modal-image">
+                        <br>
+                        <p>
+                            Супруга звезды искрометного казахского юмора <b>Турсынбека Кабатова</b> тоже очень творческая, несмотря на то, что училась в аграрном университете. <b>Молдыр</b> играет на разных инструментах, выступала в свое время в школьных и студенческих постановках, работает на телевидении. Впервые пара встретилась в 2000 году, когда молодой и подающий надежды уральский парень стал работать в астанинской филармонии. А в свободное от работы время руководил студенческой командой КВН Аграрного университета, где училась Молдыр. Полтора года были друзьями, затем год романтических отношений, после стали строить общий быт. Получилось вроде бы неплохо, ведь сегодня на их счету 4 совместных детей (3 девочки и 1 мальчик) и постоянное сотрудничество, ведь именно жена является для Турсынбека главными цензором и оценщиком его веселого творчества. 
+                        </p>
+                        <br>
+                        <br>
+                        <img src="images/41.jpg" class="img-responsive" alt="modal-image">
+                        <br>
+                        <p>
+                            Проекты известной телеведущей <b>Майи Бекбаевой</b> «Другими словами», «Выход есть» и «Моя история» сразу же выделились в отдельный ряд у отечественного телезрителя, а у коллег стали вызывать профессиональное уважение. И что немудрено, одним из верных поклонников Майи является ее супруг, коллега по цеху <b>Адиль Нуртай</b>, телеведущий и журналист. Они познакомились в результате общей сферы деятельности и взаимных интересов. Майя сразу же покорила Адиля, как только появилась новенькой в коллективе одного из отечественных телеканалов. Он, можно сказать, влюбился в нее с первого взгляда, особенно в косу, которая имелась тогда у телеведущей. Ей же понравился коллега с приятным, бархатным голосом, красивыми руками и большим набором положительных джентельменских качеств. И с тех пор они не расставались. Так и живут по сей день вместе и воспитывают двоих детей (мальчик 3 года, девочка 9 лет). Телеведущая признается, что счастлива, она любит семью, обожает работу, которой продолжала заниматься даже в декретном отпуске, а в их доме всегда царит идиллия и гармония. Ну что сказать, все предельно ясно, не прибавить – не убавить. Настоящий творческий тандем. 
+                        </p>
+                        <br>
+                        <p><b>P.S:</b> Вот, смотрю я на всех этих людей и думаю, что счастливых пар все-таки гораздо больше, чем несчастных. И они, вопреки людской молве, статистикам, скептикам, завистникам, канонам и всяким там рейтингам - «Счастливы вместе».</p>
+                    </div>                      
+                </div>
+            </div><!-- /.modal-content -->
+        </div><!-- /.modal-dialog -->
+    </div><!-- /.modal -->
+
+<!--     <div class="modal fade" id="myModal3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel3" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="myModalLabel3">Hover Style</h4>
+                </div>
+                <div class="modal-body">
+                    <div>
+                    <img src="images/folio/guy.jpg" class="img-responsive" alt="modal-image">
+                    <img src="images/folio/guy.jpg" class="img-responsive" alt="modal-image"><
+                    </div>
+                
+                </div>
+                <div class="modal-footer">
+                    <div class="mf-content">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur ratione quae, alias at. Reprehenderit, ut quis corporis laudantium, laborum sed omnis qui perspiciatis explicabo. Ipsum culpa aspernatur dolorem. Amet, quis.</p>
+                    </div>                      
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="myModal4" tabindex="-1" role="dialog" aria-labelledby="myModalLabel4" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="myModalLabel4">Hover Style</h4>
+                </div>
+                <div class="modal-body">
+                    <img src="images/folio/illustration.jpg" class="img-responsive" alt="modal-image">
+                </div>
+                <div class="modal-footer">
+                    <div class="mf-content">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus ab id unde veniam error et iste ut aspernatur accusantium porro molestiae voluptatibus rem, tempore inventore ad minus soluta praesentium magni?</p>
+                    </div>                      
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="myModal5" tabindex="-1" role="dialog" aria-labelledby="myModalLabel5" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="myModalLabel5">Hover Style</h4>
+                </div>
+                <div class="modal-body">
+                    <img src="images/folio/beach.jpg" class="img-responsive" alt="modal-image">
+                </div>
+                <div class="modal-footer">
+                    <div class="mf-content">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam amet placeat porro, maxime corrupti laboriosam, quod nulla perferendis esse ipsa atque deleniti. Magni molestias, nemo illum eos, exercitationem neque incidunt.</p>
+                    </div>                      
+                </div>
+            </div>
+        </div>
+    </div> -->
+
+    <div class="modal fade" id="subscribe_modal_1" tabindex="-1" role="dialog" aria-labelledby="subscribe_modal_1" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h2 class="modal-title">Спасибо Вам</h2>
+                </div>
+                <div class="modal-body">
+                    <div class="text-center mail-sucsess"><h3> <span>В ближайшее время наши менеджеры с вами свяжутся!</span></h3></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--javascript files
+    =============================================================-->
+    <script type="text/javascript" src="{% static js/jQueryTween-aio-min.js %}"></script> <!-- JQUERY Tween Plugin -->
+    <script type="text/javascript" src="{% static js/jquery.tabslet.min.js %}"></script> <!-- JQUERY Tab plugin-->
+    <script type="text/javascript" src="{% static js/progressbar.min.js %}"></script> <!-- JQUERY Progressbar Plugin-->
+    <script type="text/javascript" src="{% static js/jquery.simple-text-rotator.min.js %}"></script> <!-- JQUERY Text Rotator-->
+    <script type="text/javascript" src="{% static js/bootstrap.min.js %}"></script> <!-- Bootstrap file-->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCLzCN5ahaM6SHkmE9ta30l4pUD08P0YvQ"></script>
+    <script type="text/javascript" src='{% static js/isotope.pkgd.min.js %}'></script> <!--SCRIPTS FOR PORTFOLIO IMAGE'S ANIMATION-->
+    <script type="text/javascript" src="{% static js/custom.js %}"></script>
+</body>
+</html>

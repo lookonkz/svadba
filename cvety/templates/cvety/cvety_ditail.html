@@ -1,0 +1,23 @@
+{% extends "index.html" %}
+{% block html_title %}
+    Цветы {{ cvety.name }}
+{% endblock %}
+{% block application %}
+    <a href="{% url 'home' %}">Главная</a>
+    <h2>{{ cvety.name }}</h2>
+    {% if cvety.photo %}
+        <img src="{{ cvety.photo.url }}" alt="{{ cvety.name }}">
+    {% endif %}
+    <div>{{ cvety.price }}</div>
+    <div>{{ cvety.description|safe }}</div>
+    <h2>Заявка на звонок</h2>
+    {% if sended %}
+        Спасибо! Ваша заявака принята!
+    {% endif %}
+        <form action="" method="post">
+            {% csrf_token %}
+            {{ form.as_p }}
+            <input type="submit" value="Отправить заявку">
+        </form>
+{% endblock %}
+

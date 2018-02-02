@@ -1,0 +1,290 @@
+{% extends "index.html" %}
+{% load static %}
+{% load humanize %}
+{% block application %}
+    <div class="bg_heart">
+</div>
+    <!--FRONT PAGE/ SPLASH SCREEN SECTION-->
+
+    <div class="loading-screen"></div>
+
+    <div id="frontpage">
+        <div class="shadow-img"></div>
+       <!--  <video src="svadva.webm" width="520" height="390" autoplay class="front-img img-responsive" alt ="Front-image" controls = "controls"></video> -->
+        <img src="{% static 'images/front-image.png' %}" class="front-img img-responsive" alt ="Front-image">
+        <!--IMAGE FOR FRONT SCREEN-->
+        <h1>svadba <span class="invert">kz</span></h1><!--PROFILE NAME-->
+        <h3 class="invert" style="margin-top: -10px; margin-bottom: 10px; font-family: 'Sanasoft Roni B.kz';">Центр <span class="rotate">свадебной, индустрии</span></h3> <!--SUBTITLE IN PROFILE-->
+        <div class="frontclick"><img src="{% static 'images/click.png' %}" alt="" class="img-responsive"><span class="pulse"></span></div>
+    </div>
+    <!--FRONT PAGE/ SPLASH SCREEN SECTION ENDS-->
+    <!--container-->
+    <div class="container">
+        <div id="content" class="row hidden">
+            <div class="col-sm-4">
+                <!--namecard-->
+                <div id="namecard" class="namecard">
+                    <div class="shadow-img"></div>
+                    <h1 class="maintitle">svadba <span class="invert">kz</span></h1><!--PROFILE NAME-->
+                    <h3 class="invert sub-maintitle">Центр
+                        <span class="rotate">свадебной, индустрии</span><!--SUBTITLE AFTET NAME-->
+                    </h3>
+                    <img id="profile-img" class="profile-img transparent" src="{% static 'images/profile-thum.png' %}" alt="profile-image"/><!--PROFILE IMAGE-->
+                </div><!--/#namecard-->
+                <!--menu-->
+                <div id="menu-container">
+                    <!--PAGE MENU-->
+                    <ul class="nav-menu no-padding">
+                        <li class="nav-btn selected" title="Home" data-page="home">
+                            <div class="hover-background"></div>
+                            <span>О нас</span><i class="fa fa-user fa-fw"></i>
+                        </li>
+                        <li class="nav-btn folio-btn" data-filter="*"id="resume-btn"  title="Resume"  data-page="resume">
+                            <div class="hover-background"></div>
+                            <span>Выбрать город</span><i class="fa fa-file-text fa-fw"></i>
+                        </li>
+                       <li class="nav-btn folio-btn" data-filter="*" title="Portfolio" data-page="portfolio">
+                            <div class="hover-background"></div>
+                            <span>Блог</span><i class="fa fa-suitcase fa-fw"></i>
+                        </li>
+                        <li class="nav-btn" title="Contact" id="contact-link" data-page="contact">
+                            <div class="hover-background"></div>
+                            <span>Контакты</span><i class="fa fa-paper-plane fa-fw"></i>
+                        </li>
+                    </ul><!--/.nav-menu __PAGE MENU ENDS-->
+
+                    <!--SOCIAL NAV MENU-->
+                    <div class="social-menu-container">
+                        <ul class="social-menu no-padding">
+                        <li><a href="https://www.facebook.com/"><i class="fa fa-facebook"></i></a></li>
+                        <li><a href="https://www.instagram.com/_svadba.kz_/"><i class="fa fa-instagram"></i></a></li>
+                        <li><a href="https://www.youtube.com/"><i class="fa fa-youtube"></i></a></li>
+                        <li><a href="https://www.linkedin.com/"><i class="fa fa-linkedin"></i></a></li>
+                        </ul>
+                    </div><!--/.social-menu-container-->
+                </div><!--#menu-container-->
+            </div>
+            <div class="col-sm-8 page-segment">
+                <ul class="page-container no-padding">
+                    <!--HOME/PROFILE PAGE-->
+                    <li id="home" class="selected">
+                        <div class="title-container hidden">
+                            <div class="shadow-img"></div>
+                            <h2 class="rotate-out"><span class="rotate">Республиканский, Республикалық</span> <span class="rotate" style="color:white;">Центр Свадебной Индустрии, Үйлену Тойы Орталығы</span></h2>
+                            <!--HOME TITLE-->
+                        </div>
+                        <div class="description hidden">
+                            <div class="watermark-home"></div>
+
+                            <div class="fade-text transparent">
+                                <!--DESCRIPTION ON HOME-->
+                                <div class="strong-text"><span>О нас</span></div>
+                                <!--<div class="focus-text"><span> & </span><span></span></div>-->
+                                <p class="large-paragraph">Сделать ваше торжество идеальным, выбрать из огромного ассортимента предалгаемой продукции и услуг – лучшее, доверить проведение вашего “самого романтического дня” профессионалам, вам поможет портал SVADBA.KZ</p>
+                                <!--DESCRIPTION ON HOME ENDS-->
+                            </div>
+
+                            <!--ALL PERSONAL DETAILS-->
+                            <h3 class="personal-info-title title">Контактные данные</h3>
+                            <ul class="personal-info">
+                      <!--           <li class="rotate-out rotated"><label>Имя</label><span>Anderson smith</span></li>     -->
+                                <li class="rotate-out rotated"><label>Адрес</label><span>Б. Момышулы 2/4 блок 3, 4 этаж</span></li>
+                                <li class="rotate-out rotated"><label>Email</label><span>info@svadba.kz</span></li>
+                                <li class="rotate-out rotated"><label>Телефон</label><a href="tel:+77770003340"><span>+77770003340</span></a></li>
+                            </ul><!--/ul.personal-info-->
+                        </div>
+                    </li><!--/#home-->
+
+                    <!--RESUME PAGE-->
+                   <li id="resume" class="hidden">
+                        <div class="title-container">
+                            <div class="shadow-img"></div>
+                            <h2 class="rotate-out rotated"><span class="invert">Выберите </span>город</h2> <!--RESUME TITLE-->
+                        </div>
+
+
+                        <div class ="sec-porfolio description">
+                            <div class="row">
+                                <!--PORTFOLIO ITEM CONTAINER-->
+                                <div class="folio-container">
+                                    <ul class="folio-item"><!--PORTFOLIO INDIVIDAUAL ITEM-->
+                                        <li class="view view-first photography">
+                                            <img src="{% static 'images/folio/1.png' %}" alt="logs" /><!--PORTFOLIO INDIVIDAUAL ITEM IMAGE-->
+                                            <div class="mask">
+                                                 <h2>Астана</h2>
+                                                <a  href="http://astana-svadba.kz/" role="button" class="info" data-toggle="modal" >Выбрать</a>
+                                             </div>
+                                        </li>
+                                        <li class="view view-first photography">
+                                          <img src="{% static 'images/folio/3.png' %}" alt="book" />
+                                            <div class="mask"></div>
+                                            <div class="content">
+                                                <h2>Шымкент</h2>
+                                                <a  href="http://shymkent-svadba.kz/" role="button" class="info" data-toggle="modal" >Выбрать</a>
+                                            </div>
+                                        </li>
+                                        <li class="view view-first photography">
+                                             <img src="{% static 'images/folio/5.png' %}" alt="beach" />
+                                             <div class="mask">
+                                                 <h2>Алматы</h2>
+                                                 <a  href="http://almaty-svadba.kz/" role="button" class="info" data-toggle="modal" >Выбрать</a>
+                                             </div>
+                                        </li>
+                                        <li class="view view-first photography">
+                                          <img src="{% static 'images/folio/2.png' %}" alt="guy" />
+                                            <div class="mask"></div>
+                                            <div class="content">
+                                                <h2>Караганда</h2>
+                                                <a  href="http://karaganda-svadba.kz/" role="button" class="info" data-toggle="modal" >Выбрать</a>
+                                            </div>
+                                        </li>
+
+                                        <li class="view view-first photography">
+                                             <img src="{% static 'images/folio/6.png' %}" alt="illustration" />
+                                             <div class="mask">
+                                                 <h2>Атырау</h2>
+                                                 <a  href="http://atyrau-svadba.kz/" role="button" class="info" data-toggle="modal" >Выбрать</a>
+                                             </div>
+                                        </li>
+                                        <li class="view view-first photography">
+                                          <img src="{% static 'images/folio/7.png' %}" alt="guy" />
+                                            <div class="mask"></div>
+                                            <div class="content">
+                                                <h2>Актобе</h2>
+                                                <a  href="http://aktobe-svadba.kz/" role="button" class="info" data-toggle="modal" >Выбрать</a>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <!--/#resume-->
+                    <li id="portfolio" class="hidden">
+                        <div class="title-container">
+                            <div class="shadow-img"></div>
+                            <h2 class="rotate-out rotated">Блог</h2>
+                        </div>
+
+                        <div class="abs-child">
+                            <ul class="button-group filters-button-group">
+                                <li class="button is-checked" data-filter="*">Все</li>
+                                <li class="button" data-filter=".photography">Новое</li>
+                                <li class="button" data-filter=".commercial">Интересное</li>
+                        </div>
+
+                        <div class ="sec-porfolio description">
+                            <div class="row">
+                                <div class="folio-container">
+                                    <ul class="folio-item">
+                                    {% for cvety in cvetys %}
+                                        <li class="view view-first photography">
+                                                {% if cvety.photo %}
+                                                    <img src="{{ cvety.photo.url }}" alt="{{ cvety.name }}">
+                                                {% endif %}
+                                            <div class="mask">
+                                                 <h2>{{ cvety.name }}</h2>
+                                                 <a role="button" class="info" data-toggle="modal" data-target="#{{ cvety.id }}">Выбрать</a>
+                                             </div>
+                                        </li>
+                                     {% endfor %}
+                                    </ul>
+                                </div>
+
+                            </div>
+                        </div>
+                    </li>
+
+                    <!--CONTACT PAGE-->
+                    <li id="contact" class="hidden">
+                        <div class="title-container" >
+                            <div class="shadow-img"></div>
+                           <h2 class="rotate-out rotated">Контакты</h2><!--CONTACT PAGE TITLE-->
+                        </div>
+                        <div class="description">
+                            <div class="row">
+                                <div class="col-sm-12">
+                                    <div class="map-container">
+                                        <div id="map" style="width:100%;height:325px;"></div><!--GOOGLE MAP-->
+                                    </div>
+                                </div>
+
+                                <div class="col-sm-5">
+                                    <!--CONTACT DESCRIPTION-->
+                                    <h3 class="title">Наши контакты</h3>
+                                    <h6 class="sm-title"><span class="address-icon"><i class="fa fa-map-marker"></i></span>Б. Момышулы 2/4 блок 3, 4 этаж</h6>
+                                    <h6 class="sm-title"><span class="address-icon"><i class="fa fa-phone"></i></span><a href="tel:+77770003340">+77770003340</a></h6>
+                                    <h6 class="sm-title"><span class="address-icon"><i class="fa fa-envelope"></i></span>info@svadba.kz</h6>
+                                    <!--/CONTACT DESCRIPTION ENDS-->
+                                </div>
+                                <div class="col-sm-7">
+
+                                    <div class="mail-container">
+                                        <div class="cnmail result">
+                                            <div class="msg success-msg"><i class="icon svg-check"><!--?xml version="1.0" encoding="utf-8"?-->  <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="32" height="32" viewBox="0 0 32 32"> <path d="M16 2.688c-7.375 0-13.313 5.938-13.313 13.313s5.938 13.313 13.313 13.313c7.375 0 13.313-5.938 13.313-13.313s-5.938-13.313-13.313-13.313zM16 28.25c-6.75 0-12.25-5.5-12.25-12.25s5.5-12.25 12.25-12.25c6.75 0 12.25 5.5 12.25 12.25s-5.5 12.25-12.25 12.25zM22.688 11.25l-8.563 8.313-3-3c-0.313-0.313-0.813-0.313-1.125 0s-0.313 0.813 0 1.125l3.563 3.563c0.125 0.125 0.313 0.188 0.563 0.188 0.188 0 0.375-0.063 0.5-0.188l9.125-8.875c0.375-0.313 0.375-0.813 0.063-1.125s-0.813-0.313-1.125 0z"></path> </svg> </i><span>Ваше сообщение было сохранено!</span></div>
+                                            <div class="msg error-msg"><i class="icon svg-close-circle"><!--?xml version="1.0" encoding="utf-8"?-->  <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="32" height="32" viewBox="0 0 32 32"> <path d="M6.563 6.563c-5.188 5.188-5.188 13.688 0 18.875s13.688 5.188 18.875 0c5.188-5.188 5.188-13.625 0-18.875-5.188-5.188-13.625-5.188-18.875 0zM24.688 24.688c-4.813 4.75-12.563 4.75-17.375 0-4.75-4.813-4.75-12.563 0-17.375 4.813-4.75 12.563-4.75 17.375 0 4.75 4.813 4.75 12.563 0 17.375zM10.75 10l-0.813 0.75 5.313 5.25-5.25 5.25 0.75 0.75 5.25-5.25 5.25 5.25 0.75-0.75-5.25-5.25 5.313-5.25-0.813-0.75-5.25 5.25z"></path> </svg> </i><span> Извините, Сообщение не отправлено!</span></div>
+                                        </div>
+                                        <h3 class="title invert">Отправьте ваше сообщение</h3>
+                                        <!--CONTACT FORM-->
+                                            {% if sended %}
+                                                Спасибо! Ваша заявака принята!
+                                            {% endif %}
+                                        <form action="" method="post" class="form-horizontal">
+                                        {% csrf_token %}
+                                        {{ form.as_p }}
+{#                                            <div class="form-group">#}
+{#                                                <input for="id_name" type="name" class="form-control required" placeholder="Имя" data-placement="top" type="text">#}
+{#                                            </div>#}
+{#                                            <div class="form-group">#}
+{#                                                <input for="id_tel" type="tel" class="form-control email" placeholder="Тел" type="text">#}
+{#                                            </div>#}
+{#                                            <div class="form-group">#}
+{#                                                <textarea for="message" type="message" class="form-control" placeholder="Сообщение" rows="3"></textarea>#}
+{#                                            </div>#}
+{#                                            <div class="form-group">#}
+                                                <button type="submit" class="btn btn-success">Отправить</button>
+                                            </div>
+                                        </form><!--/#contact-form-->
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </li><!--/#contact-->
+                </ul>
+
+                <div class="row mobile-nav-container">
+                    <!--SOCIAL NAV FOR MOBILE-->
+                    <ul class="mobile-social no-padding">
+                        <li>Святься с нами</li>
+                        <li><a href="https://www.facebook.com/"><i class="fa fa-facebook"></i></a></li>
+                        <li><a href="https://www.instagram.com/_svadba.kz_/"><i class="fa fa-instagram"></i></a></li>
+                        <li><a href="https://www.youtube.com/"><i class="fa fa-youtube"></i></a></li>
+                        <li><a href="https://www.linkedin.com/"><i class="fa fa-linkedin"></i></a></li>
+                    </ul><!--/.mobile-social-->
+                </div>
+            </div><!--/.page-segment -->
+            <!--  <h6 class="copyright-text">Copyright © 2015 John Doe</h6> --> <!--if anyone wants copyright Texts-->
+        </div>
+    </div>
+    {% for cvety in cvetys %}
+    <div class="modal fade" id="{{ cvety.id }}" tabindex="-1" role="dialog" aria-labelledby="myModalLabel4" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="myModalLabel4">{{ cvety.name }}</h4>
+                </div>
+                <div class="modal-body">
+{#                    <img src="images/folio/illustration.jpg" class="img-responsive" alt="modal-image">#}
+                </div>
+                <div class="modal-footer">
+                    <div class="mf-content">
+                        {{ cvety.description|safe }}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    {% endfor %}
+{% endblock %}
